@@ -3,13 +3,13 @@ const express = require('express');
 const { check } = require('express-validator');
 
 const { validarCampos } = require('../middlewares/validarCampos');
-const { esRolValido, emailExiste, existeUsuarioPorId } = require('../helpers/db-validators');
+const { esRolValido, emailExiste, existeUsuarioPorId } = require('../helpers/db-validator');
 
 const { usuarioGet,
     usuarioPost,
     usuarioPut,
     usuarioPatch,
-    usuarioDelete  } = require('../controllers/usuariosCont');
+    usuarioDelete  } = require('../controllers/userController');
 
 const router = express.Router();
 

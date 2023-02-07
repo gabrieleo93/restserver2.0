@@ -32,7 +32,7 @@ class Server{
         this.app.use(express.static('public'));
     }
     routes(){
-       this.app.use(this.usuariosPath, require('../routes/usuariosRut'));
+       this.app.use(this.usuariosPath, require('../routes/userRut'));
     }
     listen(){
         this.app.listen(this.port,()=>{
