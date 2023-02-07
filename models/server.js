@@ -1,6 +1,6 @@
 const express = require('express'); 
 var cors = require('cors');
-const { dbConection } = require('../database/config');
+const { dbConection } = require('../database/congfiDB');
 class Server{
     constructor(){
         this.app = express();

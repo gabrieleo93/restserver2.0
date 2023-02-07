@@ -1,7 +1,7 @@
 const {response, request} = require('express');
-const Usuario = require('../models/usuario');
+const Usuario = require('../models/user');
 const bcrypt = require('bcryptjs');
-const { emailExiste } = require('../helpers/db-validators');
+const { emailExiste } = require('../helpers/db-validator');
 const { find } = require('../models/role');
 
 
